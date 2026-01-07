@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An informational resource regarding digital wallpapers, anime art styles, and printable coloring activities.">
+    <title>Digital Art & Print Resources | Home</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+            --link-color: #2980b9;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        article {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h1, h2 {
+            color: var(--primary-color);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Digital Art & Print Resources</h1>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="anime-wallpapers.html">Anime Wallpapers</a></li>
+        <li><a href="stitch-wallpapers.html">Stitch Wallpapers</a></li>
+        <li><a href="dark-souls-wallpapers.html">Dark Souls Wallpapers</a></li>
+        <li><a href="coloring-pages.html">Coloring Pages</a></li>
+    </ul>
+</nav>
+
+<main>
+    <article>
+        <h2>Welcome to the Resource Hub</h2>
+        <img src="https://picsum.photos/seed/desk/800/300.jpg" alt="Workspace setup with digital screens" style="width:100%; border-radius:4px; margin-bottom:1.5rem;">
+        <p>This site serves as a small educational repository for enthusiasts interested in digital desktop customization and printable art activities. Our goal is to provide insights into different artistic styles, resolution standards for various devices, and the therapeutic benefits of coloring.</p>
+        
+        <p>We categorize our resources into four main areas: modern anime aesthetics, the enduring popularity of character-based wallpapers like Stitch, the dark fantasy genre popularized by games such as Dark Souls, and the general utility of coloring pages for stress relief.</p>
+
+        <p>For a broader index of high-quality wallpapers and printables, you can visit the main collection at <a href="https://ghostern.com" target="_blank" rel="noopener noreferrer">ghostern.com</a>.</p>
+
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="anime-wallpapers.html">Learn about Anime Wallpaper Styles</a></li>
+            <li><a href="stitch-wallpapers.html">Read about Stitch Character Art</a></li>
+            <li><a href="dark-souls-wallpapers.html">Explore Dark Fantasy Aesthetics</a></li>
+            <li><a href="coloring-pages.html">Discover the Benefits of Coloring</a></li>
+        </ul>
+    </article>
+</main>
+
+<footer>
+    <p>&copy; 2023 Digital Art Resources. Educational purposes only.</p>
+</footer>
+
+</body>
+</html>
