@@ -1,42 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Art Resources – Free Guides for Gaming, Anime & Aesthetic Customization</title>
-  <meta name="description" content="Expert guides to level up your digital identity: gaming fonts, anime profile pictures, and aesthetic phone setups. Powered by Ghostern.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Art Resources</title>
+  <meta name="description" content="Curated gaming, anime, and aesthetic resources for creators, gamers, and visual inspiration." />
   <style>
-    body { font-family: system-ui, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; }
-    h1 { color: #d4af37; }
-    a { color: #c9b27e; }
-    .card { background: #1a1a1a; border: 1px solid #333; padding: 1.2rem; margin: 1rem 0; border-radius: 8px; }
-    .card h2 { margin-top: 0; color: #d4af37; }
-    footer { margin-top: 3rem; text-align: center; font-size: 0.9rem; color: #666; }
+    :root {
+      --bg: #0f1115;
+      --card: #171b22;
+      --text: #e8eaf0;
+      --muted: #aab2c0;
+      --border: #2a3140;
+      --accent: #7c8cff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #0f1115, #121725);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 40px 20px 60px; }
+    header {
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: rgba(23, 27, 34, 0.9);
+      margin-bottom: 24px;
+    }
+    h1 { margin: 0 0 10px; font-size: 2.2rem; }
+    p { color: var(--muted); margin: 0 0 14px; }
+    .toplink a, a { color: var(--accent); text-decoration: none; }
+    .toplink a:hover, a:hover { text-decoration: underline; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      min-height: 140px;
+    }
+    .card h2 { margin: 0 0 8px; font-size: 1.15rem; }
+    .card a { display: inline-block; margin-top: 8px; }
+    .section { margin-top: 28px; }
+    ul { margin: 10px 0 0 20px; color: var(--muted); }
+    .small { font-size: 0.95rem; }
   </style>
 </head>
 <body>
-  <h1>Art Resources – Free Guides for Digital Customization</h1>
-  <p>Your phone, desktop, and social profiles are a blank canvas. We write practical guides to help you express your gaming, anime, or aesthetic identity. Every tool and wallpaper we recommend is completely free and built by the Ghostern team.</p>
+  <div class="wrap">
+    <header>
+      <div class="toplink small">
+        Featured resource: <a href="https://ghostern.com/">Ghostern</a>
+      </div>
+      <h1>Art Resources</h1>
+      <p>
+        A small directory of gaming, anime, and aesthetic resources for people who want clean visuals,
+        practical tools, and inspiration in one place.
+      </p>
+      <p class="small">
+        Browse the sections below for gaming tools, aesthetic setups, and anime profile picture resources.
+      </p>
+    </header>
 
-  <div class="card">
-    <h2><a href="gaming-tools.html">⚔️ Gaming UI Forge – Fonts & Overlays</a></h2>
-    <p>Learn how to create authentic Dark Souls and Elden Ring text effects, custom health bars, and Discord clan tags. Perfect for streamers and server owners.</p>
+    <section class="grid" aria-label="Navigation">
+      <article class="card">
+        <h2>Gaming Tools</h2>
+        <p>Fonts, symbols, calculators, and game-inspired utilities.</p>
+        <a href="gaming-tools.html">Open Gaming Tools</a>
+      </article>
+
+      <article class="card">
+        <h2>Aesthetic Setups</h2>
+        <p>Text effects, image tools, and wallpaper-related resources.</p>
+        <a href="aesthetic-setups.html">Open Aesthetic Setups</a>
+      </article>
+
+      <article class="card">
+        <h2>Anime PFPs</h2>
+        <p>Profile picture collections and anime-inspired visual pages.</p>
+        <a href="anime-pfps.html">Open Anime PFPs</a>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>What this repository covers</h2>
+      <ul>
+        <li>Gaming UI and typography references</li>
+        <li>Anime wallpapers and profile picture inspiration</li>
+        <li>Aesthetic device and desktop setup ideas</li>
+        <li>Curated links to Ghostern tools and pages</li>
+      </ul>
+    </section>
   </div>
-
-  <div class="card">
-    <h2><a href="anime-pfps.html">🌸 Anime & Manga Atelier – Profile Pictures</a></h2>
-    <p>Find the perfect edgy anime PFP for Discord or Instagram. We curate red-eyed cyberpunk girls, moody boys, and matching couple icons.</p>
-  </div>
-
-  <div class="card">
-    <h2><a href="aesthetic-setups.html">🌐 Aesthetic Device Lab – Phone & Desktop Vibes</a></h2>
-    <p>Transform your home screen with vaporwave text, kawaii wallpapers, and color-inverted art. Guides for a cohesive aesthetic look across all devices.</p>
-  </div>
-
-  <p style="margin-top:2rem;">All the free tools mentioned in these guides are hosted at <a href="https://ghostern.com">Ghostern.com</a> – go there to start customizing your screen.</p>
-
-  <footer>
-    <p>© 2026 Art Resources. Guides by the Ghostern team.</p>
-  </footer>
 </body>
 </html>
