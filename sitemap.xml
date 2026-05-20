@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sharjeel2025.github.io/art-resources/</loc>
-    <lastmod>2026-05-09</lastmod>
-    <priority>1.0</priority>
+    <loc>https://github.com/sharjeel2025/art-resources/blob/main/index.html</loc>
   </url>
   <url>
-    <loc>https://sharjeel2025.github.io/art-resources/gaming-tools.html</loc>
-    <lastmod>2026-05-09</lastmod>
-    <priority>0.9</priority>
+    <loc>https://github.com/sharjeel2025/art-resources/blob/main/gaming-tools.html</loc>
   </url>
   <url>
-    <loc>https://sharjeel2025.github.io/art-resources/anime-pfps.html</loc>
-    <lastmod>2026-05-09</lastmod>
-    <priority>0.9</priority>
+    <loc>https://github.com/sharjeel2025/art-resources/blob/main/aesthetic-setups.html</loc>
   </url>
   <url>
-    <loc>https://sharjeel2025.github.io/art-resources/aesthetic-setups.html</loc>
-    <lastmod>2026-05-09</lastmod>
-    <priority>0.9</priority>
+    <loc>https://github.com/sharjeel2025/art-resources/blob/main/anime-pfps.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/sharjeel2025/art-resources/blob/main/README.md</loc>
   </url>
 </urlset>
