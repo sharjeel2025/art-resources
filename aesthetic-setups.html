@@ -6,45 +6,61 @@
   <title>Aesthetic Setups</title>
   <meta name="description" content="Aesthetic text tools, image effects, and wallpaper resources for clean visual setups." />
   <style>
-    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #0f1115; color: #e8eaf0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #0f1115;
+      color: #e8eaf0;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
     main { max-width: 980px; margin: 0 auto; padding: 40px 20px 60px; }
     a { color: #7c8cff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .panel { background: #171b22; border: 1px solid #2a3140; border-radius: 16px; padding: 22px; margin-top: 18px; }
-    h1, h2 { margin-top: 0; }
-    ul { margin: 10px 0 0 20px; color: #aab2c0; }
-    p { color: #aab2c0; line-height: 1.6; }
-    .crumb { margin-bottom: 12px; }
+    a:hover { color: #9aabff; text-decoration: underline; }
+    .panel {
+      background: #171b22;
+      border: 1px solid #2a3140;
+      border-radius: 16px;
+      padding: 24px 22px;
+      margin-top: 18px;
+    }
+    h1 { font-size: 2rem; font-weight: 700; margin: 0 0 4px; letter-spacing: -0.5px; }
+    .crumb { font-size: 0.85rem; color: #aab2c0; margin-bottom: 12px; }
+    .crumb a { color: #7c8cff; }
+    p { color: #aab2c0; margin-bottom: 6px; }
+    ul { list-style: none; padding: 0; margin: 10px 0 0; }
+    ul li { color: #aab2c0; padding: 5px 0 5px 20px; position: relative; }
+    ul li::before { content: "▹"; position: absolute; left: 0; color: #7c8cff; }
+    ul li a { color: #e8eaf0; font-weight: 500; }
+    ul li a:hover { color: #7c8cff; }
+    .back-link { display: inline-block; margin-top: 20px; font-size: 0.9rem; }
+    @media (max-width: 600px) {
+      main { padding: 24px 16px 40px; }
+      h1 { font-size: 1.6rem; }
+    }
   </style>
 </head>
 <body>
   <main>
-    <div class="crumb"><a href="index.html">Home</a> / Aesthetic Setups</div>
-    <h1>Aesthetic Setups</h1>
-    <p>
-      A set of visual resources for clean layouts, stylish text, and desktop or mobile inspiration.
-      The related Ghostern tool collection lives at <a href="https://ghostern.com/">Ghostern</a>.
-    </p>
+    <div class="crumb"><a href="index.html">← Home</a> / Aesthetic Setups</div>
+    <h1>🎨 Aesthetic Setups</h1>
+    <p>A set of visual resources for clean layouts, stylish text, and desktop or mobile inspiration. The related Ghostern tool collection lives at <a href="https://ghostern.com/">Ghostern</a>.</p>
 
     <section class="panel">
-      <h2>Featured tools and pages</h2>
+      <h2 style="font-size: 1.15rem; font-weight: 600; margin: 0 0 8px;">Featured tools and pages</h2>
       <ul>
         <li><a href="https://ghostern.com/aesthetic/image-color-inverter/">Image Color Inverter</a></li>
         <li><a href="https://ghostern.com/aesthetic/vaporwave-text-generator/">Vaporwave Text Generator</a></li>
         <li><a href="https://ghostern.com/aesthetic/instagram-font-generator/">Instagram Font Generator</a></li>
-        <li><a href="https://ghostern.com/gaming/setups/desktop-wallpapers/">Desktop Wallpapers</a></li>
-        <li><a href="https://ghostern.com/gaming/setups/mobile-wallpapers/">Mobile Wallpapers</a></li>
-        <li><a href="https://ghostern.com/anime/wallpapers/">Anime Wallpapers</a></li>
       </ul>
     </section>
 
     <section class="panel">
-      <h2>What this page is for</h2>
-      <p>
-        This page groups aesthetic utilities and wallpaper pages so the repository stays organized
-        around visual customization and setup inspiration.
-      </p>
+      <h2 style="font-size: 1.15rem; font-weight: 600; margin: 0 0 8px;">What this page is for</h2>
+      <p style="margin: 0;">This page groups aesthetic utilities and wallpaper pages so the repository stays organized around visual customization and setup inspiration.</p>
     </section>
+
+    <a href="index.html" class="back-link">← Back to home</a>
   </main>
 </body>
 </html>
