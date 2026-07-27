@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Art Resources</title>
-  <meta name="description" content="Curated gaming, anime, and aesthetic resources for creators, gamers, and visual inspiration." />
+  <meta name="description" content="Curated gaming, aesthetic, and developer resources for creators, gamers, and visual inspiration." />
   <style>
     :root {
       --bg: #0f1115;
@@ -13,80 +13,105 @@
       --muted: #aab2c0;
       --border: #2a3140;
       --accent: #7c8cff;
+      --accent-hover: #9aabff;
     }
-    * { box-sizing: border-box; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       background: linear-gradient(180deg, #0f1115, #121725);
       color: var(--text);
       line-height: 1.6;
+      min-height: 100vh;
     }
     .wrap { max-width: 1100px; margin: 0 auto; padding: 40px 20px 60px; }
     header {
-      padding: 28px;
+      padding: 32px 28px;
       border: 1px solid var(--border);
       border-radius: 18px;
-      background: rgba(23, 27, 34, 0.9);
-      margin-bottom: 24px;
+      background: rgba(23, 27, 34, 0.85);
+      backdrop-filter: blur(4px);
+      margin-bottom: 28px;
     }
-    h1 { margin: 0 0 10px; font-size: 2.2rem; }
-    p { color: var(--muted); margin: 0 0 14px; }
-    .toplink a, a { color: var(--accent); text-decoration: none; }
-    .toplink a:hover, a:hover { text-decoration: underline; }
+    .toplink { font-size: 0.9rem; color: var(--muted); margin-bottom: 8px; }
+    .toplink a { color: var(--accent); text-decoration: none; }
+    .toplink a:hover { text-decoration: underline; }
+    h1 { font-size: 2.2rem; font-weight: 700; margin: 0 0 8px; letter-spacing: -0.5px; }
+    .subtitle { color: var(--muted); font-size: 1.05rem; margin-bottom: 6px; }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-      margin-top: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
     }
     .card {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 16px;
-      padding: 18px;
-      min-height: 140px;
+      padding: 22px 20px;
+      transition: border-color 0.2s, transform 0.15s;
     }
-    .card h2 { margin: 0 0 8px; font-size: 1.15rem; }
-    .card a { display: inline-block; margin-top: 8px; }
-    .section { margin-top: 28px; }
-    ul { margin: 10px 0 0 20px; color: var(--muted); }
-    .small { font-size: 0.95rem; }
+    .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .card h2 { font-size: 1.15rem; font-weight: 600; margin: 0 0 6px; }
+    .card p { color: var(--muted); font-size: 0.92rem; margin: 0 0 12px; }
+    .card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-block;
+    }
+    .card a:hover { color: var(--accent-hover); text-decoration: underline; }
+    .section { margin-top: 36px; }
+    .section h2 { font-size: 1.3rem; font-weight: 600; margin-bottom: 12px; }
+    ul { list-style: none; padding: 0; margin: 0; }
+    ul li { color: var(--muted); padding: 4px 0 4px 20px; position: relative; }
+    ul li::before { content: "▹"; position: absolute; left: 0; color: var(--accent); }
+    hr { border: none; border-top: 1px solid var(--border); margin: 36px 0 20px; }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 12px;
+    }
+    .blog-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px;
+      transition: border-color 0.2s;
+    }
+    .blog-card:hover { border-color: var(--accent); }
+    .blog-card .blog-title { font-weight: 600; font-size: 0.95rem; margin-bottom: 4px; }
+    .blog-card .blog-title a { color: var(--text); text-decoration: none; }
+    .blog-card .blog-title a:hover { color: var(--accent); }
+    .blog-card .blog-meta { font-size: 0.8rem; color: var(--muted); }
+    .small { font-size: 0.85rem; color: var(--muted); }
+    @media (max-width: 600px) {
+      .wrap { padding: 24px 16px 40px; }
+      header { padding: 20px 16px; }
+      h1 { font-size: 1.8rem; }
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="toplink small">
-        Featured resource: <a href="https://ghostern.com/">Ghostern</a>
-      </div>
+      <div class="toplink">Featured resource: <a href="https://ghostern.com/">Ghostern</a></div>
       <h1>Art Resources</h1>
-      <p>
-        A small directory of gaming, anime, and aesthetic resources for people who want clean visuals,
-        practical tools, and inspiration in one place.
-      </p>
-      <p class="small">
-        Browse the sections below for gaming tools, aesthetic setups, and anime profile picture resources.
-      </p>
+      <p class="subtitle">Curated gaming, aesthetic, and developer resources for creators, gamers, and visual inspiration.</p>
+      <p class="small">Browse the sections below for gaming tools, aesthetic setups, and technical articles.</p>
     </header>
 
     <section class="grid" aria-label="Navigation">
       <article class="card">
-        <h2>Gaming Tools</h2>
+        <h2>🎮 Gaming Tools</h2>
         <p>Fonts, symbols, calculators, and game-inspired utilities.</p>
-        <a href="gaming-tools.html">Open Gaming Tools</a>
+        <a href="gaming-tools.html">Open Gaming Tools →</a>
       </article>
 
       <article class="card">
-        <h2>Aesthetic Setups</h2>
+        <h2>🎨 Aesthetic Setups</h2>
         <p>Text effects, image tools, and wallpaper-related resources.</p>
-        <a href="aesthetic-setups.html">Open Aesthetic Setups</a>
-      </article>
-
-      <article class="card">
-        <h2>Anime PFPs</h2>
-        <p>Profile picture collections and anime-inspired visual pages.</p>
-        <a href="anime-pfps.html">Open Anime PFPs</a>
+        <a href="aesthetic-setups.html">Open Aesthetic Setups →</a>
       </article>
     </section>
 
@@ -94,10 +119,35 @@
       <h2>What this repository covers</h2>
       <ul>
         <li>Gaming UI and typography references</li>
-        <li>Anime wallpapers and profile picture inspiration</li>
         <li>Aesthetic device and desktop setup ideas</li>
         <li>Curated links to Ghostern tools and pages</li>
+        <li>Technical articles on web development and performance</li>
       </ul>
+    </section>
+
+    <hr>
+
+    <section class="section">
+      <h2>✍️ Blog & Articles</h2>
+      <p class="small" style="margin-bottom: 12px;">Technical writing on web development, performance, and real‑world projects.</p>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <div class="blog-title"><a href="https://dev.to/sharjeel360/from-factory-floor-to-digital-showroom-transforming-bwa-sports-manufacturing-business-with-39og" target="_blank" rel="noopener noreferrer">From Factory Floor to Digital Showroom</a></div>
+          <div class="blog-meta">Dev.to · Case Study</div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-title"><a href="https://dev.to/sharjeel360/how-i-built-a-website-cost-calculator-in-3-days-no-frameworks-1ia3" target="_blank" rel="noopener noreferrer">How I Built a Website Cost Calculator in 3 Days</a></div>
+          <div class="blog-meta">Dev.to · JavaScript</div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-title"><a href="https://devandart.hashnode.dev/what-a-40-conversion-lift-actually-taught-me-about-speed-and-seo" target="_blank" rel="noopener noreferrer">What a 40% Conversion Lift Taught Me About Speed &amp; SEO</a></div>
+          <div class="blog-meta">Hashnode · Performance</div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-title"><a href="https://devandart.hashnode.dev/the-cost-of-pixels-ui-engineering-strategies-for-low-latency-client-side-graphic-tools" target="_blank" rel="noopener noreferrer">The Cost of Pixels: UI Engineering Strategies</a></div>
+          <div class="blog-meta">Hashnode · Engineering</div>
+        </div>
+      </div>
     </section>
   </div>
 </body>
