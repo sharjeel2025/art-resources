@@ -5,7 +5,7 @@ Curated guides and resources for gaming visuals, aesthetic setups, and developer
 ## What's inside
 
 - Gaming UI and typography resources
-- Aesthetic setup inspiration
+- Text effects and image color tools
 - Curated links to Ghostern tools
 - Technical articles on web development and performance
 
@@ -19,7 +19,7 @@ Curated guides and resources for gaming visuals, aesthetic setups, and developer
 
 - [Home](index.html) — overview and navigation
 - [Gaming Tools](gaming-tools.html) — fonts, symbols, calculators, and game-inspired tools
-- [Aesthetic Setups](aesthetic-setups.html) — text effects, color tools, and wallpaper resources
+- [Aesthetic Setups](aesthetic-setups.html) — text effects and color tools
 
 ## Blog & Articles
 
